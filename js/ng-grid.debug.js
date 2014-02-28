@@ -2,7 +2,7 @@
 * ng-grid JavaScript Library
 * Authors: https://github.com/angular-ui/ng-grid/blob/master/README.md 
 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
-* Compiled At: 02/28/2014 15:00
+* Compiled At: 02/28/2014 15:29
 ***********************************************/
 (function(window, $) {
 'use strict';
@@ -3273,8 +3273,7 @@ ngGridDirectives.directive('ngInput', [function() {
                     case 38: // Up arrow
                     case 39: // Right arrow
                     case 40: // Down arrow
-						alert('down!');
-                        evt.stopPropagation();
+						elm.blur();
                         break;
                     case 27: // Esc (reset to old value)
                         if (!scope.$$phase) {
